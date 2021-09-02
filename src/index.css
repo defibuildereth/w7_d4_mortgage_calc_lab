@@ -5,9 +5,30 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: aqua;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+
+.mortgageContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  background-color: crimson;
+}
+
+.mortgageForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background-color: blueviolet;
+  padding: 40px;
+}
+
+.mortgageForm >* {
+  padding:8px
 }

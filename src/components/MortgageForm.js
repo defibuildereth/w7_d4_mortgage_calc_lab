@@ -9,13 +9,13 @@ const MortgageForm = ({onSalaryChanged, onDepositChanged, onDurationChanged, onI
 
 
     return (
-        <>
+        <div className='mortgageForm'>
         <h4> I'm the Form</h4>
         <Salaries onSalaryChanged={onSalaryChanged}/>
         <Deposit onDepositChanged={onDepositChanged}/>
         <Duration onDurationChanged={onDurationChanged}/>
         <Interest onInterestChanged={onInterestChanged}/>
-        </>
+        </div>
     )
 }
 

@@ -4,10 +4,10 @@ import ResultsBox from '../components/ResultsBox'
 
 const MortgageContainer = ({}) => {
 
-    const [salaries, setSalaries] = useState(0)
-    const [deposit, setDeposit] = useState(0)
-    const [duration, setDuration] = useState(0)
-    const [interest, setInterest] = useState(0)
+    const [salaries, setSalaries] = useState('')
+    const [deposit, setDeposit] = useState('')
+    const [duration, setDuration] = useState('')
+    const [interest, setInterest] = useState('')
 
     const onSalaryChanged = function (salary) {
         setSalaries(salary)
@@ -30,13 +30,20 @@ const MortgageContainer = ({}) => {
         console.log(`the new interest rate is ${interest}`)
     }
 
+    useEffect(() => {
+        onDurationChanged(0);
+        onInterestChanged(0);
+        onDepositChanged(0);
+        onSalaryChanged(0);
+    }, [])
+
     return (
-        <>
-        <h2>Hey I'm the Mortgage Container</h2>
+        <div className='mortgageContainer'>
+        
         <MortgageForm onSalaryChanged={onSalaryChanged} onDepositChanged={onDepositChanged} onDurationChanged={onDurationChanged} onInterestChanged={onInterestChanged}/>
         <ResultsBox salaries={salaries} deposit={deposit} duration={duration} interest={interest}/>
         
-        </>
+        </div>
     )
 }
 

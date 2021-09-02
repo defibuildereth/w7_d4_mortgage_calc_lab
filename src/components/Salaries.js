@@ -17,7 +17,8 @@ const Salaries = ({onSalaryChanged}) => {
     return (
         <>
         <label for='salary1'>Input Salary Here: </label>
-        <input type='number' id='salary1' onChange={handleChange}></input>
+        <input type='number' id='salary1'  onChange={handleChange}></input>
+        <label for='salary2'>Input Salary2 Here: </label>
         <input type='number' id='salary2' onChange={handleChange}></input>
         {/* <p>I'm the total:</p> */}
         
