@@ -1,9 +1,10 @@
 import React from 'react'
 import Salaries from './Salaries'
 import Deposit from './Deposit'
+import Duration from './Duration'
 
 
-const MortgageForm = ({onSalaryChanged, onDepositChanged}) => {
+const MortgageForm = ({onSalaryChanged, onDepositChanged, onDurationChanged}) => {
 
 
     return (
@@ -11,6 +12,7 @@ const MortgageForm = ({onSalaryChanged, onDepositChanged}) => {
         <h4> I'm the Form</h4>
         <Salaries onSalaryChanged={onSalaryChanged}/>
         <Deposit onDepositChanged={onDepositChanged}/>
+        <Duration onDurationChanged={onDurationChanged}/>
         </>
     )
 }
