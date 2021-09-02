@@ -6,8 +6,8 @@ const ResultsBox = ({salaries}) => {
 
     return (
         <>
-        <h4>I'm the Results</h4>
-        <p>{salaries}</p>
+        <h4>I'm the Mortgage offer</h4>
+        <p>{salaries*3}</p>
         </>
     )
 }

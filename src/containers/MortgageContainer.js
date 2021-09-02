@@ -8,7 +8,7 @@ const MortgageContainer = ({}) => {
 
     const onSalaryChanged = function (salary) {
         setSalaries(salary)
-        console.log(`new salary is ${salaries}`)
+        console.log(`new total salaries is ${salaries}`)
     }
 
     
