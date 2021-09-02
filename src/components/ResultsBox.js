@@ -1,13 +1,13 @@
 import React from 'react'
 
-const ResultsBox = ({salaries}) => {
+const ResultsBox = ({salaries, deposit}) => {
 
 
 
     return (
         <>
         <h4>I'm the Mortgage offer</h4>
-        <p>{salaries*3}</p>
+        <p>{Number(salaries*3)+Number(deposit)}</p>
         </>
     )
 }
