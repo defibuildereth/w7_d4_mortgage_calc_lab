@@ -1,6 +1,6 @@
 import React from 'react'
 
-const ResultsBox = ({salaries, deposit, duration}) => {
+const ResultsBox = ({salaries, deposit, duration, interest}) => {
 
     const buyingPower = Number(salaries*3)
 

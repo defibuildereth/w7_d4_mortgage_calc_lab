@@ -7,6 +7,7 @@ const MortgageContainer = ({}) => {
     const [salaries, setSalaries] = useState(0)
     const [deposit, setDeposit] = useState(0)
     const [duration, setDuration] = useState(0)
+    const [interest, setInterest] = useState(0)
 
     const onSalaryChanged = function (salary) {
         setSalaries(salary)
@@ -24,12 +25,16 @@ const MortgageContainer = ({}) => {
 
     }
 
+    const onInterestChanged = function (interest) {
+        setInterest(interest)
+        console.log(`the new interest rate is ${interest}`)
+    }
 
     return (
         <>
         <h2>Hey I'm the Mortgage Container</h2>
-        <MortgageForm onSalaryChanged={onSalaryChanged} onDepositChanged={onDepositChanged} onDurationChanged={onDurationChanged}/>
-        <ResultsBox salaries={salaries} deposit={deposit} duration={duration}/>
+        <MortgageForm onSalaryChanged={onSalaryChanged} onDepositChanged={onDepositChanged} onDurationChanged={onDurationChanged} onInterestChanged={onInterestChanged}/>
+        <ResultsBox salaries={salaries} deposit={deposit} duration={duration} interest={interest}/>
         
         </>
     )
