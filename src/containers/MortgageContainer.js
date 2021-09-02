@@ -4,13 +4,16 @@ import ResultsBox from '../components/ResultsBox'
 
 const MortgageContainer = ({}) => {
 
+    const [salaries, setSalaries] = useState(0)
+
+    
 
 
     return (
         <>
         <h2>Hey I'm the Mortgage Container</h2>
         <MortgageForm />
-        <ResultsBox/>
+        <ResultsBox salaries={salaries}/>
         
         </>
     )

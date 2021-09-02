@@ -5,7 +5,8 @@ const Salaries = ({}) => {
 
     return (
         <>
-        <p>Form Item Here</p>
+        <label for='salary'>Input Salary Here: </label>
+        <input type='number' id='salary'></input>
         </>
     )
 }
