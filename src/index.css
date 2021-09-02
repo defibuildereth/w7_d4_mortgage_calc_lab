@@ -32,3 +32,8 @@ code {
 .mortgageForm >* {
   padding:8px
 }
+
+.legend {
+  background-color: darkgreen;
+  color: white
+}

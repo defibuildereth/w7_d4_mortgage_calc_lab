@@ -19,7 +19,7 @@ const ResultsBox = ({salaries, deposit, duration, interest}) => {
             <p>For your desired duration of: {duration} years..</p>
             <p>The yearly interest rate is: {interest}</p>
             <p>The monthly repayment would be: £{monthlyRepayment}</p>
-            <p>The total you repay is: £{monthlyRepayment*numberOfMonths}</p>
+            <p>The total you repay is: £{(monthlyRepayment*numberOfMonths).toFixed(2)}</p>
         </div>
     )
 }
